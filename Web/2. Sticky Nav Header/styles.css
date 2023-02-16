@@ -1,31 +1,4 @@
-/*! ---------- BASE STYLE ---------- */
-
-* {
-    box-sizing: border-box;
-}
-
-:root {
-    --color-darker-gray: #373737;
-    --color-dark-gray: #4F4F51;
-    --color-light-gray: #D6D6D6;
-    --color-light-pink: #F2C4CE;
-    --color-pink: #F58F7C;
-}
-
-html, body {
-    margin: 0;
-    height: 100vh;
-    width: 100vw;
-    overflow-x: hidden;
-    color: var(--color-light-gray);
-    font-family: "Roboto", sans-serif;
-    background: var(--color-darker-gray);
-}
-
-a {
-    color: unset;
-    text-decoration: none;
-}
+@import url(../misc/base.css);
 
 /*? ---------- NAV BAR ---------- */
 
