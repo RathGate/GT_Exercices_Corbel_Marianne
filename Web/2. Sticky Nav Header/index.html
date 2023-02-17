@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <title>Sticky Nav Header</title>
 </head>
 <body>
@@ -12,19 +13,25 @@
         <nav>
             <div class="nav-left"><img class="logo" src="../misc/logo.png" alt="logo"></div>
             <div class="nav-right">
-                <div class="nav-link"><a href="#section-1">SECTION 1</a></div>
-                <div class="nav-link"><a href="#section-2">SECTION 2</a></div>
-                <div class="nav-link"><a href="#section-3">SECTION 3</a></div>
-                <div class="nav-link"><a href="#section-4">SECTION 4</a></div>
+                <div class="nav-link-container">
+                    <a href="#section-1" class="nav-link"><div>SECTION 1</div></a>
+                    <a href="#section-2" class="nav-link"><div>SECTION 2</div></a>
+                    <a href="#section-3" class="nav-link"><div>SECTION 3</div></a>
+                    <a href="#section-4" class="nav-link"><div>SECTION 4</div></a>
+                </div>
+                <div class="icon-menu"><span class="icon-menu material-symbols-outlined">menu</span></div>
             </div>
         </nav>
     
     </header>
     <main>
-        <section id="section-1"></section>
-        <section id="section-2"></section>
-        <section id="section-3"></section>
-        <section id="section-4"></section>
+        <section id="section-1">
+            <div class="placeholder-img"><img src="../misc/kyogre.jpg" alt="hehe"></div>
+        </section>
+        <section id="section-2"><div class="placeholder-img"><img src="../misc/vergil.jpg" alt="hehe"></div></section>
+        <section id="section-3"><div class="placeholder-img"><img src="../misc/a.jpg" alt="hehe"></div></section>
+        <section id="section-4"><div class="placeholder-img"><img src="../misc/plant.jpg" alt="hehe"></div></section>
     </main>
+    <script src="script.js"></script>
 </body>
 </html>

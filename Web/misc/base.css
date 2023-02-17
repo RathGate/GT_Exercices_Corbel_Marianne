@@ -6,7 +6,7 @@
 }
 
 :root {
-    --color-darker-gray: #373737;
+    --color-darker-gray: #232323;
     --color-dark-gray: #4F4F51;
     --color-light-gray: #D6D6D6;
     --color-light-pink: #F2C4CE;
@@ -15,13 +15,18 @@
 
 html, body {
     margin: 0;
-    height: 100vh;
-    width: 100vw;
-    overflow-x: hidden;
-    color: var(--color-light-gray);
-    font-family: "Roboto", sans-serif;
-    background: var(--color-darker-gray);
+    min-height: 100vh;
+    height: 100%;
+    width: 100%;
+    background-color: var(--color-darker-gray);
+    color: #ececec;
+    font-family: 'Roboto', sans-serif;
 }
+
+/* main {
+    padding-top: 75px;
+    min-height: 100%;
+} */
 
 a {
     color: unset;
