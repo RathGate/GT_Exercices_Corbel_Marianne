@@ -19,5 +19,3 @@ window.addEventListener("resize", function() {
         this.document.querySelector(".nav-link-container").classList.remove("visible")
     } 
 })
-
-console.log("bonjour")
