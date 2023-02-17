@@ -148,7 +148,7 @@ section {
 }
 .visible {
     width: var(--nav-width);
-    max-width: 100%;
+    max-width: calc(100% - 20px);
 }
 .visible .nav-hide {
     min-width: max-content;
