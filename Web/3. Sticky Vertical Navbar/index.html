@@ -8,17 +8,25 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
         <title>Sticky Nav Header</title>
     </head>
 <body>
     <header>
         <nav>
-            <div class="logo"><img src="../misc/logo.png" alt=""></div>
-            <div class="nav-links-container">
-                <div class="nav-link"><a href="#section-1">SECTION 1</a></div>
-                <div class="nav-link"><a href="#section-2">SECTION 2</a></div>
-                <div class="nav-link"><a href="#section-3">SECTION 3</a></div>
-                <div class="nav-link"><a href="#section-4">SECTION 4</a></div>    
+            <div class="icon-menu"><span class="arrow-icon material-symbols-outlined">navigate_next</span></div>
+            <div class="nav-upper">
+                <div class="logo"><img src="../misc/logo.png" alt=""></div>
+                <div class="nav-links-container">
+                    <div class="nav-link"><a href="#section-1"><span class=" icon material-symbols-outlined">home</span><span class="nav-hide">SECTION 1</span></a></div>
+                    <div class="nav-link"><a href="#section-2"><span class="material-symbols-outlined icon">person</span><span class="nav-hide">SECTION 1</span></a></div>
+                    <div class="nav-link"><a href="#section-3"><span class="material-symbols-outlined icon">headphones</span><span class="nav-hide">SECTION 1</span></a></div>
+                    <div class="nav-link"><a href="#section-4"><span class="material-symbols-outlined icon">attach_money</span><span class="nav-hide">SECTION 1</span></a></div>    
+                </div>
+            </div>
+            <div class="nav-lower">
+                <div class="profile-pic"><img src="../misc/profile.jpg" alt=""></div>
+                <div class="profile-name nav-hide"><span class="username">RathGate</span><span class="details">Professional CSS Hater</span></div>
             </div>
         </nav>
     </header>
@@ -28,5 +36,6 @@
         <section id="section-3"></section>
         <section id="section-4"></section>
     </main>
+    <script src="script.js"></script>
 </body>
 </html>
