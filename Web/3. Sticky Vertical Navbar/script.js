@@ -23,11 +23,9 @@ window.addEventListener("resize", function() {
 function arrowToggle(element) {
     if (element) {
         if (element.innerHTML == "navigate_next") {
-            element.innerHTML = "navigate_before"
-            element.classList.add("active")
+            arrowOpen(element)
         } else {
-            element.innerHTML = "navigate_next"
-            element.classList.remove("active")
+            arrowClose(element)
         }
     }
 }
@@ -35,3 +33,14 @@ function arrowClose(element) {
     element.innerHTML = "navigate_next"
     element.classList.remove("active")
 }
+function arrowOpen(element) {
+    element.innerHTML = "navigate_before"
+    element.classList.add("active")
+}
+
+document.querySelector(".mobile-menu").addEventListener("click", function() { 
+        if (window.innerWidth < 550) {
+            document.querySelector("header").classList.add("visible")
+            arrowOpen(document.querySelector(".arrow-icon"))
+        }
+    })

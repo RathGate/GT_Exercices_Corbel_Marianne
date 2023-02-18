@@ -1,29 +1,37 @@
 @import url(../misc/base.css);
-body {
-    --nav-width: 350px;
+
+html, * {
+    scroll-behavior: smooth;
 }
+
 header {
     position: fixed;
     top: 0;
     left: 0;
     min-width: 75px;
-    width: var(--nav-width);
-    /* max-width: var(--nav-width); */
+    width: 350px;
     height: 100%;
     transition: width .4s ease;
 }
-nav {
+nav.vertical-nav {
     display: flex;
     flex-direction: column;
     height: 100%;
     width: 100%;
     justify-content: space-between;
-    margin: auto;
     padding: 30px 30px;
     border-right: 2px solid var(--color-light-pink);
     background-color: var(--color-darker-gray);
     position: relative;
-
+}
+nav.horizontal-nav {
+    width: 100vw;
+    height: 70px;
+    position: absolute;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    background-color: var(--color-darker-gray);
 }
 .nav-links-container {
     display: flex;
@@ -64,8 +72,7 @@ main {
 section {
     height: 100%;
     width: 100%;
-    padding-left: var(--nav-width);
-    /* Max: 900px */
+    padding-left: 348px;
 }
 
 
@@ -141,13 +148,14 @@ section {
     right: -20px;
     cursor: pointer;
     display: none;
+    z-index: 5;
 }
 .icon-menu span {
     font-size: 40px !important;
     margin-left: 2px;
 }
 .visible {
-    width: var(--nav-width);
+    width: 350px;
     max-width: calc(100% - 20px);
 }
 .visible .nav-hide {
@@ -163,7 +171,10 @@ section {
     header {
         width: 90px;
     }
-    nav {
+    section {
+        padding-left: 88px;
+    }
+    nav.vertical-nav {
         padding: 30px 20px;
     }
     .nav-hide {
@@ -177,4 +188,59 @@ section {
         left: calc(-150px - 30px);
         transition: .4s ease
     }
+}
+@media screen and (max-width:550px) {
+    header {
+        width: 350px;
+        max-width: 100%;
+        
+    }
+    nav.vertical-nav {
+        left: -100%;
+        transition: left .4s ease;
+        padding: 20px;
+    }
+    .visible {
+        width: 350px;
+        max-width: 100%;
+    }
+    .visible .vertical-nav {
+        left: 0;
+    }
+    .icon-menu {
+        right: 20px;
+        top: 20px;
+    }
+    section {
+        padding-left: 0;
+    }
+    
+}
+
+.mobile-menu {
+    width: 50px;
+    aspect-ratio: 1;
+    display: grid;
+    align-items: center;
+    cursor: pointer;
+}
+.mobile-menu span {
+    font-size:  40px !important;
+}
+
+.placeholder-img {
+    width: 100%;
+    margin: 25px;
+    max-width: 700px;
+    border: 2px solid var(--color-light-pink);
+}
+section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.placeholder-img img {
+    max-width: 100%;
+    display: block;
+    width: 100%;
 }
