@@ -95,6 +95,7 @@ section {
     display: block;
     border-radius: 50%;
     border: 2px solid var(--color-light-gray);
+    transition: border .2s ease;
 }
 .profile-name {
     display: flex;
@@ -102,8 +103,13 @@ section {
     gap: 3px;
 }
 .username {
+    display: block;
+    max-width: fit-content;
     font-size: 16px;
     letter-spacing: 1px;
+    transition: .2s ease;
+    border-radius: 3px;
+    padding: 1px 3px;
 }
 .details {
     font-size: 15px;
@@ -244,4 +250,16 @@ section {
     max-width: 100%;
     display: block;
     width: 100%;
+}
+
+.nav-lower {
+    cursor: pointer;
+}
+.nav-lower:hover img {
+    border-color: var(--color-light-pink);
+}
+.nav-lower:hover .username {
+    background-color: #F2C4CE;
+    color: #373737;
+    font-weight: bold;
 }
