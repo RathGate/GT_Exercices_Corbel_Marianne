@@ -84,13 +84,14 @@ section {
 }
 
 .profile-pic {
-    max-height: 50px;
+    height: 50px;
     aspect-ratio: 1;
     border-radius: 50%;
     
 }
 .profile-pic img {
     max-height: 100%;
+    height: 100%;
     display: block;
     border-radius: 50%;
     border: 2px solid var(--color-light-gray);
