@@ -66,6 +66,7 @@ nav > * {
 .dropdown-menu {
     position: absolute;
     min-width: max-content;
+    height: fit-content;
     top: 100%;
     left: 0;
     border: 2px solid #F2C4CE;
@@ -75,6 +76,7 @@ nav > * {
     min-width: 175px;
     position: relative;
     color: var(--color-light-gray);
+    height: fit-content;
 }
 .dropdown-option .dropdown-menu {
     top: -2px;
@@ -93,12 +95,14 @@ nav > * {
 }
 .dropdown-container > .dropdown-menu {
     opacity: 0;
+    height: fit-content;
     pointer-events: none;
-    transition: opacity .2s ease;   
+    transition: .2s ease;   
 }
 .dropdown-container:hover > .dropdown-menu {
     opacity: 1;
     pointer-events: initial;
+    height: fit-content;
 }
 .icon-menu {
     cursor: pointer;
