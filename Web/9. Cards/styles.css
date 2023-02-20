@@ -44,10 +44,10 @@ section  {
 }
 .card-content::after {
     position: absolute;
-    height: 100%;
-    width: 200%;
-    top: -10%;
-    left: 0;
+    height: 110%;
+    width: 110%;
+    top: -7%;
+    left: -3%;
     content: "";
     background-color: var(--color-darker-gray);
     transform: rotate(-5deg);
@@ -55,10 +55,10 @@ section  {
 }
 .card-content::before {
     position: absolute;
-    height: 100%;
-    width: 200%;
-    top: -12%;
-    left: 0;
+    height: 15px;
+    width: 110%;
+    top: -10%;
+    left: -3%;
     content: "";
     background-color: violet;
     transform: rotate(-5deg);
