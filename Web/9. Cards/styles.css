@@ -1,0 +1,131 @@
+@import url(../misc/base.css);
+
+section  {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 25px;
+    min-height: 100%;
+    align-items: center;
+}
+
+.card-item {
+    width: 300px;
+    aspect-ratio: 0.65;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 5px 5px 5px black;
+    flex-shrink: 0;
+}
+.card-img {
+    height: 50%;
+    width: 100%;
+
+}
+.card-img img {
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+    object-position: bottom;
+}
+.card-content {
+    padding: 20px;
+    /* height: 55%;
+    min-height: 55%; */
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-gap: 10px;
+    position: relative;
+    /* top: -5%; */
+    z-index: 2;
+}
+.card-content::after {
+    position: absolute;
+    height: 100%;
+    width: 200%;
+    top: -10%;
+    left: 0;
+    content: "";
+    background-color: var(--color-darker-gray);
+    transform: rotate(-5deg);
+    z-index: -1;
+}
+.card-content::before {
+    position: absolute;
+    height: 100%;
+    width: 200%;
+    top: -12%;
+    left: 0;
+    content: "";
+    background-color: violet;
+    transform: rotate(-5deg);
+    z-index: -1;
+}
+.card-header {
+
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+.card-tags {
+    display: flex;
+    font-size: 11px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    gap: 5px;
+}
+.card-tag {
+    color: black;
+    background-color: var(--color-light-gray);
+    font-weight: bold;
+    padding: 1px 3px;
+    border-radius: 3px;
+    /* border: 1px solid white; */
+}
+/* .bg-javascript {
+    color: #f1e05a;
+}
+.bg-css {
+    color: #563d7c;
+}
+.bg-html {
+    color: #e34c26;
+} */
+.card-title {
+    font-size: 20px;
+}
+.card-description {
+    font-size: 14px;
+    display: -webkit-box;
+    -webkit-line-clamp: 7;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    /* white-space: nowrap; */
+}
+.card-description p {
+    margin: 0;
+    opacity: .5;
+}
+
+.arrow-icon {
+    font-size: 20px !important;
+    float: right;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin: 0 -8px -8px 0;
+}
+
+.card-container {
+    display: flex;
+    max-width: 1250px;
+    /* flex-wrap: nowrap; */
+    gap: 30px;
+    flex-wrap: wrap;
+    padding-bottom: 20px;
+    align-content: center;
+    justify-content: center;
+}
