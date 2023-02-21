@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit&family=Roboto&display=swap" rel="stylesheet">
+    <title>Sticky Nav Header</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav-left"><img class="logo" src="assets/logo.png" alt="logo"></div>
+            <div class="nav-right">
+                <div class="nav-link-container">
+                    <a href="/" class="nav-link"><div>PAGE 1</div></a>
+                    <a href="/page_2" class="nav-link"><div>PAGE 2</div></a>
+                    <a href="/page_3" class="nav-link"><div>PAGE 3</div></a>
+                    <a href="/page_4" class="nav-link"><div>PAGE 4</div></a>
+                </div>
+                <div class="icon-menu"><span class="icon-menu material-symbols-outlined">menu</span></div>
+            </div>
+        </nav>
+    
+    </header>
+    <main>
+        
+        <section>
+            <h1 class="main-title">Welcome to Page {{.currentPage}}</h1>
+            <div class="placeholder-img"><img src="assets/page_{{.currentPage}}.webp" alt="hehe"></div>
+        </section>
+    </main>
+    <script src="assets/script.js"></script>
+</body>
+</html>
