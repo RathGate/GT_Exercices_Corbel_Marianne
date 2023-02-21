@@ -17,11 +17,12 @@ section  {
     flex-direction: column;
     border-radius: 10px;
     overflow: hidden;
-    box-shadow: 5px 5px 5px black;
+    box-shadow: 5px 5px cyan;
+    border: 3px solid var(--color-darker-gray);
     flex-shrink: 0;
 }
 .card-img {
-    height: 50%;
+    height: 55%;
     width: 100%;
 
 }
@@ -33,11 +34,10 @@ section  {
 }
 .card-content {
     padding: 20px;
-    /* height: 55%;
-    min-height: 55%; */
-    display: grid;
-    grid-template-rows: auto 1fr auto;
-    grid-gap: 10px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
     position: relative;
     /* top: -5%; */
     z-index: 2;
@@ -60,7 +60,7 @@ section  {
     top: -10%;
     left: -3%;
     content: "";
-    background-color: violet;
+    background-color: cyan;
     transform: rotate(-5deg);
     z-index: -1;
 }
@@ -100,7 +100,7 @@ section  {
 .card-description {
     font-size: 14px;
     display: -webkit-box;
-    -webkit-line-clamp: 7;
+    -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
     overflow: hidden;
     /* white-space: nowrap; */
@@ -114,9 +114,9 @@ section  {
     font-size: 20px !important;
     float: right;
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     justify-content: flex-end;
-    margin: 0 -8px -8px 0;
+    flex: 1;
 }
 
 .card-container {
