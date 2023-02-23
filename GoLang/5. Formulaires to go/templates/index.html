@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaires to Go</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+    <header>
+        <a href="/"><div class="logo"><img src="assets/logo.png" alt="WhatEva Logo"></div></a>
+    </header>
+    <main>
+        <div class="container">
+        <h1>A particularly useless form</h1>
+        <form action="/" method="POST">
+            <label for="firstName"><span>FIRST NAME</span><input id="firstName" name="firstName" type="text"></label>
+            <label for="lastName"><span>LAST NAME</span><input id="lastName" name="lastName" type="text"></label>
+            <label for="birthYear"><span>YEAR OF BIRTH</span>
+                <select id="birthYear" name="birthYear">
+                    <option value="">----</option>
+                    <option value="1998">1998</option>
+                    <option value="1999">1999</option>
+                    <option value="2000">[REDACTED]</option>
+                    <option value="2001">2001</option>
+                </select>
+            </label>
+            <div class="animal-label" for="animal"><span>FAVORITE ANIMAL</span>
+                <div class="animal-radio"><label class="inline-label" for="cat"><input id="cat" name="animal" type="radio" value="cat">Cat</label>
+                    <label class="inline-label" for="dog"><input id="dog" name="animal" type="radio" value="dog">Dog</label>
+                    <label class="inline-label" for="neither"><input id="neither" name="animal" type="radio" value="what is wrong with you">Neither</label>
+                </div>
+                </div>
+            <label class="tos-label" for="tos"><input id="tos" name="tos" type="checkbox">
+                I have read and agreed to the <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">Terms of Service</a></label>
+            <input type="submit" value="SUBMIT">
+        </form>
+        </div>
+
+    </main>
+</body>
+</html>

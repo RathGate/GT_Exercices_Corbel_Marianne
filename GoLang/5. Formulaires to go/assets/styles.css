@@ -1,0 +1,129 @@
+* {
+    box-sizing: border-box;
+}
+body, html {
+    height: 100vh;
+    width: 100%;
+    background-color: #131313;
+    color: #ececec;
+    margin: 0;
+    font-family: "Kanit", sans-serif;
+}
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 75px;
+    width: 100%;
+    border-bottom: 2px solid cyan;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+a {
+    color: white;
+}
+.logo {
+    height: 45px;
+}
+.logo img{
+    display: block;
+    max-height: 100%;
+}
+main {
+    height: 100%;
+    width: 100%;
+    padding-top: 75px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+form {
+    font-size: 18px;
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+input[type="submit"] {
+    width: fit-content;
+    margin: auto;
+    font-size: 18px;
+    margin-top: 20px;
+}
+.animal-radio {
+    width: fit-content;
+    margin: auto;
+}
+.animal-label {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+label:not(.tos-label, .inline-label) {
+    display: flex;
+    gap: 3px;
+    flex-direction: column;
+}
+.tos-label {
+    margin-top: 15px;
+    font-size: 16px;
+}
+input[type="text"], select {
+    font-size: 15px;
+    padding: 3px 5px;
+    font-family: "Kanit", sans-serif;
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255, 0.1);
+    outline: none;
+    border: 2px solid white;
+    transition: border .1s ease;
+    color: white;
+}
+input[type="text"]:focus-visible, select:focus-visible, input[type="text"]:hover, select:hover {
+    border: 2px solid cyan;
+}
+.animal-label {
+    margin-top: 15px;
+}
+input[type="submit"] {
+    font-family: "Kanit", sans-serif;
+    padding: 0 5px;
+    letter-spacing: 1px;
+    background-color: white;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: .2s ease;
+    border: none;
+    outline: none;
+}
+input[type="submit"]:hover {
+    background-color: yellowgreen;
+    color: white;
+}
+@media screen and (max-width: 550px) {
+    header {
+        height: 65px;
+    }
+    main {
+        padding-top: 65px;
+    }
+    .logo {
+        height: 35px;
+    }
+    h1{
+        font-size: 28px;
+    }
+    form {
+        font-size: 14px;
+    }
+    .tos-label {
+        font-size: 14px;
+    }
+    input[type="submit"] {
+        font-size: 16px;
+    }
+}
