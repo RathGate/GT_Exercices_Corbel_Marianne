@@ -72,7 +72,6 @@ nav > * {
     border: 2px solid #F2C4CE;
 }
 .dropdown-option {
-    padding: 15px;
     min-width: 175px;
     position: relative;
     color: var(--color-light-gray);
@@ -97,7 +96,8 @@ nav > * {
     opacity: 0;
     height: fit-content;
     pointer-events: none;
-    transition: .2s ease;   
+    transition: .2s ease; 
+    min-width: 100%;  
 }
 .dropdown-container:hover > .dropdown-menu {
     opacity: 1;
@@ -111,10 +111,112 @@ nav > * {
     align-items: center;
     justify-items: center;
     margin-bottom: 3px;
+    width: fit-content;
+    margin-right: 20px;
 }
 
 .icon-menu span {
     font-size: 40px;
 }
 
+.option-name {
+    padding: 15px;
+}
+@media screen and (max-width: 750px) {
+    nav {
+        padding: 0 20px;
+    }
+    nav * {
+        -webkit-tap-highlight-color: transparent;
+    }
+    .nav-link {
+        width: fit-content;
+        display: block;
+    }
+    .dropdown-container {
+        display: initial;
+        height: auto;
+        width: 100%;
+    }
+    .dropdown-menu {
+        position: static;
+        opacity: 1 !important;
+        border: none;
+    }
+    .dropdown-option {
+        width: 100%;
+        padding: 0;
+    }
+    .icon-menu {
+        display: flex;
+    }
+    .nav-left {
+        position: absolute;
+        flex-direction: column;
+        align-items: initial;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        gap: 23px;
+        padding: 30px 30px;
+        height: fit-content;
+        border-bottom: 2px solid white;
+        transition: all .2s ease;
+        z-index: -1;
+        background-color: var(--color-darker-gray);
+    }
 
+    .dropdown-menu {
+        max-height: 0px;
+        overflow: hidden;
+        border: none;
+        transition: max-height .3s ease;
+    }
+    .first-level > .dropdown-option {
+        padding: 10px 0 ;
+    }
+    .dropdown-menu.second-level {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+    .dropdown-option:hover .dropdown-menu {
+        max-height: 200px;
+        pointer-events: initial;
+        padding: 15px;
+    }
+
+    .dropdown-container:hover > .dropdown-menu {
+        max-height: 500px;
+        margin-top: 10px;
+    }
+    .dropdown-option:hover{
+        background-color: transparent;
+        color: var(--color-light-gray);
+        
+    }
+    .dropdown-option:hover > .option-name {
+        background-color: pink;
+        color: #373737;
+    }
+    
+    .first-level, .second-level {
+        margin: 0 20px;
+    }
+
+    .option-name {
+        padding: 5px 8px;
+        border-radius: 3px;
+        width: fit-content;
+    }
+    .visible {
+        top: 100%;
+        bottom: auto;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .nav-center img {
+        max-height: 35px;
+    }
+}
