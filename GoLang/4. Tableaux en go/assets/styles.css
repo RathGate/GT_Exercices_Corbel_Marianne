@@ -1,0 +1,137 @@
+/* ALL PURPOSES: */
+
+* {
+    box-sizing: border-box;
+}
+
+a {
+    color: white;
+}
+
+body, html {
+    height: 100vh;
+    width: 100%;
+    background-color: #131313;
+    color: #ececec;
+    margin: 0;
+    font-family: "Kanit", sans-serif;
+}
+
+/* NAVBAR */
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 75px;
+    width: 100%;
+    border-bottom: 2px solid cyan;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #131313;
+}
+
+.logo {
+    height: 45px;
+}
+.logo img{
+    display: block;
+    max-height: 100%;
+}
+
+/* MAIN CONTENT: */
+
+main {
+    height: 100%;
+    width: 100%;
+    padding-top: 75px;
+}
+section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 100px 25px 50px;
+}
+
+/* TABLE */
+
+.table-container {
+    max-width: 100%;
+    overflow: auto;
+    padding-bottom: 10px;
+}
+
+table {
+    font-size: 20px;
+    border-collapse: collapse;
+    border: 2px solid cyan;
+    overflow: auto;
+}
+
+td {
+    width: 55px;
+    min-width: 55px;
+    padding: 5px 0;
+    text-align: center;
+    max-height: fit-content;
+}
+
+td:not(:first-child) {
+    border-left: 1px solid #696969;
+}
+tr:not(:first-child) {
+    border-top: 1px solid #696969;
+}
+
+/* SCROLLBARS: */
+
+.table-container {
+    scrollbar-width: auto;
+    scrollbar-color: cyan rgba(255, 255, 255, .15);
+}
+
+.table-container::-webkit-scrollbar {
+    height: 7px;
+}
+
+.table-container::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, .15);
+}
+
+.table-container::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 255, 255, 0.8);
+    border-radius: 10px;
+}
+.table-container::-webkit-scrollbar-thumb:hover {
+    background: cyan;
+}
+
+
+/* !RESPONSIVE */
+
+@media screen and (max-width: 750px) {
+    section {
+        padding: 40px 10px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    header {
+        height: 65px;
+    }
+    main {
+        padding-top: 65px;
+    }
+    .logo {
+        height: 35px;
+    }
+    table {
+        font-size: 16px;
+    }
+    td {
+        width: 45px;
+        min-width: 45px;
+    }
+}
+
