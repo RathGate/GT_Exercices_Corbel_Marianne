@@ -1,5 +1,9 @@
 @import url(../misc/base.css);
 
+:root {
+    --width-slide: 1000px;
+}
+
 header {
     position: fixed;
     top: 0;
@@ -32,23 +36,21 @@ main {
     justify-content: center;
 }
 
-@media screen and (max-width: 550px) {
-    header {
-        height: 65px;
-    }
-    main {
-        padding-top: 65px;
-    }
-    .logo {
-        height: 35px;
-    }
+section {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 25px;
+    max-width: 1200px;
 }
 
 /* SLIDER */
 
 .carousel-body {
-    width: 1000px;
-    aspect-ratio: 16 / 9;
+    width: var(--width-slide);
+    aspect-ratio: 16/9;
     position: relative;
     overflow: hidden;
 }
@@ -63,7 +65,7 @@ main {
     transition: left .3s ease-in-out;
 }
 .slide-item {
-    width: 1000px;
+    width: var(--width-slide);
     aspect-ratio: 16 / 9;
     border: 2px solid var(--color-light-pink);
     font-family: Arial, Helvetica, sans-serif;
@@ -114,7 +116,6 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
-    border-bottom: 1px solid gray;
 }
 .slide-icons {
     display: flex;
@@ -133,4 +134,78 @@ main {
     transform: scale(1.8);
     padding: 0 2px;
     transition: .2s ease;
+}
+
+@media screen and (max-width: 1250px) {
+    :root {
+        --width-slide: 820px
+    }
+}
+@media screen and (max-width: 950px) {
+    :root {
+        --width-slide: 620px;
+    }
+    .carousel-ctrl {
+        height: 65px;
+        width: 65px;
+        top: calc(50% - 32px);
+    }
+    .carousel-ctrl i {
+        font-size: 35px !important;
+    }
+    .prev {
+        left: -32px;
+    }
+    .next {
+        right: -32px;
+    }
+}
+@media screen and (max-width: 750px) {
+    :root {
+        --width-slide: calc(100vw - 65px - 50px);
+    }
+}
+
+@media screen and (max-width: 550px) {
+    header {
+        height: 65px;
+    }
+    main {
+        padding-top: 65px;
+    }
+    .logo {
+        height: 35px;
+    }
+    section {
+        padding: 10px;
+    }
+    .carousel, .carousel-body {
+        width: 100%;
+    }
+    .slide-item {
+        width: calc(100vw - 20px);
+    }
+    .carousel-body, .slide-item {
+        aspect-ratio: 1.2;
+    }
+    .carousel-ctrl {
+        background-color: transparent;
+        border: none;
+    }
+    .carousel-ctrl i {
+        font-size: 40px !important;
+        color: white;
+    }
+    .prev {
+        left: 0;
+    }
+    .next {
+        right: 0;
+    }
+    .slide-icon-container {
+        height: 40px;
+    }
+    .carousel {
+        margin-bottom: 40px;
+    }
 }
