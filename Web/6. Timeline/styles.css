@@ -1,0 +1,242 @@
+@import url(../misc/base.css);
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 75px;
+    width: 100%;
+    border-bottom: 2px solid var(--color-light-pink);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-darker-gray);
+    z-index: 10;
+}
+header * {
+    transition: .2s ease 
+}
+.logo {
+    height: 45px;
+}
+.logo img{
+    display: block;
+    max-height: 100%;
+}
+
+/* MAIN CONTENT: */
+
+main {
+    width: 100%;
+    padding-top: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section {
+    min-height: 100%;
+    width: 100%;
+    padding: 25px;
+    max-width: 1200px;
+}
+
+
+/* !TIMELINE */
+
+.timeline-container {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-family: "Roboto", sans-serif;
+    margin: 30px auto;
+}
+.tl-deco {
+    position: absolute;
+    left: calc(50% - 1px);
+    width: 2px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px;
+}
+.tl-deco.after {
+    top: 100%;
+}
+.tl-deco.before {
+    bottom: calc(100% + 4px);
+}
+.tl-deco span {
+    margin-top: -10px;
+}
+.timeline-bg {
+    position: absolute;
+    top: 0;
+    left: calc(50%);
+    width: 2px;
+    height: calc(100%);
+    background: var(--color-light-gray);
+}
+.timeline-item {
+    /* height: 300px; */
+    width: calc(50% + 1px);
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.timeline-item:nth-of-type(odd) {
+    margin-left: auto;
+}
+.item-circle {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    right: -10px;
+    top: -10px;
+    background: var(--color-light-gray);
+    border-radius: 50%;
+}
+.timeline-item:nth-of-type(odd) .item-circle {
+    left: -10px;
+}
+
+.timeline-card-container {
+    height: 100%;
+    width: 100%;
+    padding-right: 25px;
+    position: relative;
+}
+.timeline-item:nth-of-type(odd) .timeline-card-container {
+    padding: 0 0 0 25px;
+}
+
+.timeline-item:nth-of-type(odd) .timeline-card {
+    border-radius: 0px 30px 30px 30px !important;
+}
+.timeline-card {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 30px 0 30px 30px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    padding: 15px 20px 20px 20px;
+}
+.timeline-date {
+    opacity: 0.70;
+    font-size: 14px;
+    padding: 5px 15px 5px 15px;
+    font-family: "Roboto";
+    letter-spacing: 2px;
+    transition: opacity .2s ease;
+}
+.timeline-item:nth-of-type(odd) .timeline-date {
+    padding-left: 40px;
+}
+.tl-card-header {
+    font-size: 30px;
+    letter-spacing: 1px;
+    margin-bottom: 7px;
+}
+
+.timeline-item:hover .timeline-date {
+    opacity: 1;
+}
+
+/* !RESPONSIVE */
+
+@media screen and (max-width: 750px) {
+    .timeline-item {
+        width: 100%
+    }
+    .timeline-container {
+        max-width: 450px;
+        gap: 40px;
+    }
+    .timeline-card-container {
+        padding: 0 0 0 25px;
+    }
+    .timeline-card {
+        border-radius: 0px 30px 30px 30px;
+    }
+    .item-circle {
+        right: auto;
+        left: -10px;
+    }
+    .timeline-bg, .tl-deco {
+        left: 0;
+    }
+    .timeline-date {
+        padding-left: 40px;
+    }
+    .timeline-date  {
+        font-size: 12px;
+    }
+    .tl-card-header {
+        font-size: 22px;
+        margin-bottom: 3px;
+    }
+    .tl-card-main {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    header {
+        height: 65px;
+    }
+    main {
+        padding-top: 65px;
+    }
+    .logo {
+        height: 35px;
+    }
+    section {
+        padding: 10px;
+        padding-top: 25px;
+    }
+    .timeline-container {
+        padding: 0 15px;
+    }
+    .timeline-bg, .tl-deco {
+        left: 15px;
+    }
+    .item-circle {
+        left: -9px;
+    }
+    .tl-deco {
+        left: 14px;
+    }
+    .timeline-card {
+        padding: 15px;
+        padding-top: 10px;
+    }
+    .timeline-container {
+        gap: 25px;
+    }
+    .tl-card-header {
+        font-size: 20px;
+    }
+    .tl-card-main {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .timeline-card {
+        padding: 15px;
+        padding-top: 10px;
+    }
+
+    .tl-card-header {
+        font-size: 18px;
+    }
+    .tl-card-main {
+        font-size: 13px;
+    }
+    .timeline-date {
+        padding-left: 30px !important;
+    }
+}

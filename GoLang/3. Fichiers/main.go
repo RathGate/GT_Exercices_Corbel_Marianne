@@ -83,6 +83,7 @@ func MainMenu() {
 			continue
 		}
 		// The file exists and can be edited:
+		fmt.Println()
 		OpenFileMenu(answerStr)
 	}
 }
