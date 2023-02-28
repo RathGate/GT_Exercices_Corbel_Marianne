@@ -17,7 +17,6 @@ func indexHandler(w http.ResponseWriter, r *http.Request) {
 }
 
 func page_2Handler(w http.ResponseWriter, r *http.Request) {
-	fmt.Println(r.URL.Path)
 	if r.URL.Path != "/page_2" {
 		errorHandler(w, r, http.StatusNotFound)
 		return
@@ -61,7 +60,7 @@ func main() {
 	http.HandleFunc("/page_4", page_4Handler)
 
 	// Launches the server:
-	preferredPort := ":8081"
+	preferredPort := ":8080"
 	fmt.Printf("Starting server at port %v\n", preferredPort)
 	if err := http.ListenAndServe(preferredPort, nil); err != nil {
 		log.Fatal(err)
