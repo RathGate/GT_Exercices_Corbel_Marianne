@@ -174,7 +174,7 @@ nav > * {
         gap: 23px;
         padding: 30px 30px;
         height: fit-content;
-        border-bottom: 2px solid white;
+        border-bottom: 2px solid var(--color-beige);
         transition: all .2s ease;
         z-index: -1;
         background-color: rgba(19, 19, 19, 0.80);
@@ -186,6 +186,7 @@ nav > * {
         overflow: hidden;
         border: none;
         transition: max-height .3s ease;
+        background-color: transparent;
     }
     .first-level > .dropdown-option {
         padding: 10px 0 ;
@@ -234,4 +235,8 @@ nav > * {
     .nav-center img {
         max-height: 35px;
     }
+}
+
+.no-after::after {
+    content: none;
 }

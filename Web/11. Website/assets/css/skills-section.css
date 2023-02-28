@@ -11,7 +11,13 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-
+    position: relative;
+}
+#projects {
+    position: absolute;
+    height: 10px;
+    top: -90px;
+    left: 0;
 }
 .slide-title {
     margin-top: 30px;
@@ -236,6 +242,10 @@
     section {
         padding: 10px;
     }
+    .skills-section {
+        padding: 40px 10px 150px !important;
+        min-height: auto;
+    }
 }
 
 @media screen and (max-width: 550px) {
@@ -261,8 +271,9 @@
     }
     .carousel-ctrl i {
         font-size: 40px !important;
-        color: white;
+        color: var(--color-beige);
     }
+
     .prev {
         left: 0;
     }
@@ -379,6 +390,7 @@
     overflow: hidden;
     box-shadow: 5px 5px var(--color-beige);
     border: 3px solid #191919;
+    background-color: #191919;
     flex-shrink: 0;
 }
 .card-img {
@@ -443,17 +455,7 @@
     font-weight: bold;
     padding: 1px 3px;
     border-radius: 3px;
-    /* border: 1px solid white; */
 }
-/* .bg-javascript {
-    color: #f1e05a;
-}
-.bg-css {
-    color: #563d7c;
-}
-.bg-html {
-    color: #e34c26;
-} */
 .card-title {
     font-size: 20px;
 }
@@ -463,7 +465,6 @@
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
     overflow: hidden;
-    /* white-space: nowrap; */
 }
 .card-description p {
     margin: 0;

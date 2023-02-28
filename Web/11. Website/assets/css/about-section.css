@@ -21,13 +21,13 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 2px solid white;
+    border: 2px solid var(--color-beige);
 }
 .about-pfp img {
     display: block;
     max-height: 90%;
     border-radius: 50%;
-    border: 2px solid white;
+    border: 2px solid var(--color-beige);
 }
 
 .about-container {
@@ -71,7 +71,7 @@ h3::before {
     position: absolute;
     top:-2px;
     left: -2px;
-    background-color: white;
+    background-color: var(--color-beige);
     z-index: -1;
     transition: background ease .25s;
 }

@@ -2,11 +2,10 @@ document.querySelector(".icon-menu").addEventListener("click", function() {
     document.querySelector(".nav-left").classList.toggle("visible")
 })
 
-document.querySelectorAll(".nav-link").forEach(element => {
+document.querySelectorAll(".clickable").forEach(element => {
     element.addEventListener("click", function() { 
-        if (window.innerWidth < 750) {
+            console.log("bonjour")
             document.querySelector(".nav-left").classList.remove("visible")
-        }
     })
 });
 

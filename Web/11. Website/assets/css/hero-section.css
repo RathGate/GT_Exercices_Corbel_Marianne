@@ -62,7 +62,7 @@
     width: 10em;
     max-width: 100%;
     animation: title-border-expand 1.5s ease ;
-    background-color: white;
+    background-color: var(--color-beige);
     border-radius: 40%;
     position: relative;
     z-index: 2;
@@ -91,7 +91,7 @@
     animation: text-downwards 2.25s ease;
 }
 .title-subtitle i {
-    color: white;
+    color: var(--color-beige);
     margin: 0 5px;
     animation: colors 4s alternate linear infinite;
 }
