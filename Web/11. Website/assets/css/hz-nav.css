@@ -1,0 +1,44 @@
+.hz-nav {
+    position: fixed;
+    bottom: calc((100vh - 75px) / 2 - 150px);
+    right: -80px;
+    writing-mode:vertical-rl;
+    font-size: 25px ;
+    z-index: 10;
+    transition: right .2s ease;
+}
+.shortcut-container {
+    padding: 10px 30px 10px 20px;
+    height: 300px;
+    width: 80px;
+    display: flex;
+    justify-content: space-between;
+    background: #13131396;
+    border-radius: 0px 0 0 5px;
+    backdrop-filter: blur(5px);
+    border: 2px solid var(--color-beige);
+    border-width: 0 0 0 2px;
+    
+}
+.hz-menu-icon {
+    position: absolute;
+    right: 100%;
+    top: 0;
+    font-size: 13px;
+    letter-spacing: 5px;
+    padding: 10px 5px 8px;
+    background: #13131396;
+    backdrop-filter: blur(5px);
+    border: 2px solid var(--color-beige);
+    border-width: 2px 0 2px 2px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.hz-nav.visible {
+    top: auto;
+    right: 0;
+}
+
+.shortcut-container div {
+    cursor: pointer;
+}

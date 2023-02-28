@@ -1,0 +1,47 @@
+/*! ---------- BASE STYLE ---------- */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+:root {
+    --color-yellow: #ffd600;
+    --color-orange: #ff7a00;
+    --color-red: #ff0069;
+    --color-purple: #d300c5;
+    --color-blue: #7638fa;
+    --color-beige: #e4e4e4;
+    --background-color: #131313;
+    --screen-height: calc(100vh - 60px);
+    --color-gradient: linear-gradient(45deg,
+    var(--color-yellow),
+    var(--color-orange),
+    var(--color-red),
+    var(--color-purple) 60%,
+    var(--color-blue) 85%);
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    min-height: 100vh;
+    height: 100%;
+    width: 100%;
+    background-color: var(--background-color);
+    color: var(--color-beige);
+    font-family: 'Questrial', sans-serif;
+}
+
+/* main {
+    padding-top: 75px;
+    min-height: 100%;
+} */
+
+a {
+    color: unset;
+    text-decoration: none;
+}

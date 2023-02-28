@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="assets/css/styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <script src="https://kit.fontawesome.com/65cde144bd.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Poppins:wght@100;400&family=Questrial&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <title>Dropdown Menu</title>
+    </head>
+<body>
+    <header>
+        <nav>
+            <div class="icon-menu">
+                <span class="material-symbols-outlined">menu</span>
+            </div>
+            
+            <div class="nav-left">
+                <a class="nav-link" href="index.html"><div>HOME</div></a>
+                <div class="dropdown-container">
+                    <a class="nav-link"><div>PROJECTS</div></a>
+                    <div class="empty" style="height: 3px; width: 100%; position: absolute; top: 100%;"></div>
+                    <div class="dropdown-menu first-level">
+                        <div class="dropdown-option ">
+                            <a class="a-ignore" href="/#projects"><div class="option-name">OVERVIEW</div></a>
+                            <!-- <div class="dropdown-menu second-level">
+                                <div class="dropdown-option"><div class="option-name">ABCD 1.1</div></div>
+                                <div class="dropdown-option"><div class="option-name">ABCD 1.2</div></div>
+                            </div> -->
+                        </div>
+
+                        <div class="dropdown-option"><div class="option-name">TIMELINE</div>
+                        <div class="dropdown-menu second-level">
+                            <a href="projects.html"><div class="dropdown-option"><div class="option-name">2022</div></div></a>
+                            <a href="projects.html#tl-2023"><div class="dropdown-option"><div class="option-name">2023</div></div></a>
+                        </div>
+                        </div>
+                        <!-- <div class="dropdown-option"><div class="option-name">ALL PROJECTS</div>
+                            <div class="dropdown-menu second-level">
+                                <div class="dropdown-option"><div class="option-name">SOFTWARE DEVELOPMENT</div></div>
+                                <div class="dropdown-option"><div class="option-name">WEB DEVELOPMENT</div></div>
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+                <a class="nav-link" href="contact.html"><div>CONTACT</div></a>
+            </div>
+            <a href="index.html" style="display: flex; align-items: center;"><div class="nav-center"><img src="assets/img/logo.png" alt="RathGate Logo"></div></a>
+        </nav>
+    </header>
+        <main>
+        <section id="home" class="hero-section">
+            <div class="hero-subsection">
+                <div class="main-title">
+                    <div class="indent-container">
+                        <div class="indent-icon">></div>
+                        <div class="indent-icon">></div>
+                        <div class="indent-icon">></div>
+                    </div>
+                    <div class="name-container">
+                        <span class="firstname">MARIANNE</span><br><span class="lastname">CORBEL</span>
+                    </div>
+                </div>
+                <div class="title-border"></div>
+                <div class="title-subtitle">FIRST-YEAR COMPUTER SCIENCE STUDENT <i class="fa-solid fa-code first"></i><br>
+                INTERESTED IN BOTH SOFTWARE AND WEB DEVELOPMENT <i class="fa-solid fa-code second"></i></div>
+            </div>
+            <div class="stars-background">
+                <div class="star-drop"></div>
+                <div class="star-drop"></div>
+                <div class="star-drop"></div>
+                <div class="star-drop"></div>
+                <div class="star-drop"></div>
+            </div>
+        </section>
+        <section id="about" class="about-section">
+            <h1 class="section-title">ABOUT ME<i class="fa-solid fa-code"></i></h1>
+            <div class="about-container">
+                <div class="about-pfp-container">
+                    <div class="about-pfp"><img src="assets/img/pfp.png" alt="Ma grosse tête"></div>
+                </div>
+                <div class="about-content">
+                    <h3>WHO AM I</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis voluptates saepe aperiam culpa praesentium itaque magni quis repudiandae error architecto aliquam, nostrum perspiciatis eius debitis facere? Illum ducimus excepturi alias.</p>
+                      
+                    <!-- <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos minima ut, porro non ad cupiditate laborum doloribus maxime pariatur numquam error expedita rerum sequi. Odio reiciendis obcaecati voluptates quasi officiis?</p> -->
+                    <h3 class="title-tldr">>> LONG STORY SHORT <<</h3>
+                    <p class="tldr">>>> 23 YEARS OLD // AIX-EN-PROVENCE, FRANCE // STUDYING AT YNOV-AIX</p>
+                </div>
+            </div>
+
+            <div id="skill-title" class="slide-title">SOFTWARE DEVELOPMENT</div>
+            <div id="skill-carousel" class="carousel">
+                <div class="carousel-body">
+                    <div class="slide-container transition-allowed">
+                        <div class="slide-item">
+                            <div class="slide-content">
+                                <div class="skill"><i class="devicon devicon-c-plain"></i><span class="skill-description">BEGINNER</span></div>
+                                <div class="skill"><i class="devicon devicon-cplusplus-plain"></i><span class="skill-description">BEGINNER</span></div>
+                                <div class="skill"><i class="devicon devicon-java-plain"></i><span class="skill-description">BEGINNER</span></div>
+                                <div class="skill"><i class="devicon devicon-python-plain"></i><span class="skill-description">INTERMEDIATE</span></div>
+                                <div class="skill golang"><i class="devicon devicon-go-plain"></i><span class="skill-description">INTERMEDIATE</span></div>
+                            </div>
+                        </div>
+                        <div class="slide-item">
+                            <div class="slide-content">
+                                <div class="skill"><i class="devicon devicon-html5-plain"></i><span class="skill-description">BEGINNER</span></div>
+                                <div class="skill"><i class="devicon devicon-css3-plain"></i><span class="skill-description">BEGINNER</span></div>
+                                <div class="skill"><i class="devicon devicon-javascript-plain"></i><span class="skill-description">BEGINNER</span></div>
+                                <div class="skill"><i class="devicon devicon-vuejs-plain"></i><span class="skill-description">INTERMEDIATE</span></div>
+                                <div class="skill golang"><i class="devicon devicon-react-plain"></i><span class="skill-description">BEGINNER</span></div>
+                            </div>
+                        </div>
+                        <div class="slide-item">
+                            <div class="slide-content">
+                                <div class="skill"><i class="devicon devicon-django-plain"></i><span class="skill-description">BEGINNER</span></div>
+                                <div class="skill"><i class="devicon devicon-flask-plain"></i><span class="skill-description">BEGINNER</span></div>
+                                <div class="skill"><i class="devicon devicon-go-plain"></i><span class="skill-description">INTERMEDIATE</span></div>
+                            </div>
+                        </div>
+                        <div class="slide-item">
+                            <div class="slide-content">
+                                <div class="skill"><i class="devicon devicon-unrealengine-plain"></i><span class="skill-description">PLZ LEAVE ME ALONE</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-ctrl prev"><i class="fa-solid fa-angle-left"></i></div>
+                <div class="carousel-ctrl next"><i class="fa-solid fa-angle-right"></i></div>
+                <div class="slide-icon-container">
+                    <div class="slide-icons">
+                        <div id="icon_0" class="icon-active"><i class="fa-solid fa-circle"></i></div>
+                        <div id="icon_1"><i class="fa-solid fa-circle"></i></div>
+                        <div id="icon_2"><i class="fa-solid fa-circle"></i></div> 
+                        <div id="icon_3"><i class="fa-solid fa-circle"></i></div>                   
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="projects" class="skills-section">
+            <h1 class="section-title">PROJECTS<i class="fa-solid fa-code"></i></h1>
+            <div class="see-all">SEE ALL<i class="fa-solid fa-arrow-right"></i></div>
+            <div class="carousel-container">
+                <div id="card-1" class="card-item">
+                    <div class="card-img">
+                        <img src="assets/img/bleurp.png" alt="">
+                    </div>
+                    <div class="card-content">
+                        <div class="card-header">
+                            <div class="card-tags"><span class="card-tag bg-javascript">Javascript</span><span class="card-tag bg-html">WAKE UP</span></div>
+                            <div class="card-title">Petit projet</div>
+                        </div>
+                        <div class="card-description">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem nam animi nihil recusandae quam, quis est quae minus ipsam placeat laboriosam? Nam modi laborum dicta, provident error a ex saepe tempora tempore sunt, Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem nam animi nihil recusandae quam, quis est quae minus ipsam placeat laboriosam? Nam modi laborum dicta, provident error a ex saepe tempora tempore sunt, </p>
+                        </div>
+                        <div class="arrow-icon">
+                            <span class="material-symbols-outlined">arrow_forward</span>
+                        </div>
+                    </div>
+                </div>
+                <div id="card-1" class="card-item">
+                    <div class="card-img">
+                        <img src="assets/img/bleurp.png" alt="">
+                    </div>
+                    <div class="card-content">
+                        <div class="card-header">
+                            <div class="card-tags"><span class="card-tag bg-javascript">Javascript</span><span class="card-tag bg-html">WAKE UP</span></div>
+                            <div class="card-title">Petit projet</div>
+                        </div>
+                        <div class="card-description">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem nam animi nihil recusandae quam, quis est quae minus ipsam placeat laboriosam? Nam modi laborum dicta, provident error a ex saepe tempora tempore sunt, Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem nam animi nihil recusandae quam, quis est quae minus ipsam placeat laboriosam? Nam modi laborum dicta, provident error a ex saepe tempora tempore sunt, </p>
+                        </div>
+                        <div class="arrow-icon">
+                            <span class="material-symbols-outlined">arrow_forward</span>
+                        </div>
+                    </div>
+                </div>
+                <div id="card-1" class="card-item">
+                    <div class="card-img">
+                        <img src="assets/img/bleurp.png" alt="">
+                    </div>
+                    <div class="card-content">
+                        <div class="card-header">
+                            <div class="card-tags"><span class="card-tag bg-javascript">Javascript</span><span class="card-tag bg-html">WAKE UP</span></div>
+                            <div class="card-title">Petit projet</div>
+                        </div>
+                        <div class="card-description">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem nam animi nihil recusandae quam, quis est quae minus ipsam placeat laboriosam? Nam modi laborum dicta, provident error a ex saepe tempora tempore sunt, Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem nam animi nihil recusandae quam, quis est quae minus ipsam placeat laboriosam? Nam modi laborum dicta, provident error a ex saepe tempora tempore sunt, </p>
+                        </div>
+                        <div class="arrow-icon">
+                            <span class="material-symbols-outlined">arrow_forward</span>
+                        </div>
+                    </div>
+                </div>
+                <div id="card-1" class="card-item">
+                    <div class="card-img">
+                        <img src="assets/img/bleurp.png" alt="">
+                    </div>
+                    <div class="card-content">
+                        <div class="card-header">
+                            <div class="card-tags"><span class="card-tag bg-javascript">Javascript</span><span class="card-tag bg-html">WAKE UP</span></div>
+                            <div class="card-title">Petit projet</div>
+                        </div>
+                        <div class="card-description">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem nam animi nihil recusandae quam, quis est quae minus ipsam placeat laboriosam? Nam modi laborum dicta, provident error a ex saepe tempora tempore sunt, Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem nam animi nihil recusandae quam, quis est quae minus ipsam placeat laboriosam? Nam modi laborum dicta, provident error a ex saepe tempora tempore sunt, </p>
+                        </div>
+                        <div class="arrow-icon">
+                            <span class="material-symbols-outlined">arrow_forward</span>
+                        </div>
+                    </div>
+                </div>
+                <div id="card-1" class="card-item">
+                    <div class="card-img">
+                        <img src="assets/img/bleurp.png" alt="">
+                    </div>
+                    <div class="card-content">
+                        <div class="card-header">
+                            <div class="card-tags"><span class="card-tag bg-javascript">Javascript</span><span class="card-tag bg-html">WAKE UP</span></div>
+                            <div class="card-title">Petit projet</div>
+                        </div>
+                        <div class="card-description">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem nam animi nihil recusandae quam, quis est quae minus ipsam placeat laboriosam? Nam modi laborum dicta, provident error a ex saepe tempora tempore sunt, Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem nam animi nihil recusandae quam, quis est quae minus ipsam placeat laboriosam? Nam modi laborum dicta, provident error a ex saepe tempora tempore sunt, </p>
+                        </div>
+                        <div class="arrow-icon">
+                            <span class="material-symbols-outlined">arrow_forward</span>
+                        </div>
+                    </div>
+                </div>
+                <div id="card-1" class="card-item">
+                    <div class="card-img">
+                        <img src="assets/img/bleurp.png" alt="">
+                    </div>
+                    <div class="card-content">
+                        <div class="card-header">
+                            <div class="card-tags"><span class="card-tag bg-javascript">Javascript</span><span class="card-tag bg-html">WAKE UP</span></div>
+                            <div class="card-title">Petit projet</div>
+                        </div>
+                        <div class="card-description">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem nam animi nihil recusandae quam, quis est quae minus ipsam placeat laboriosam? Nam modi laborum dicta, provident error a ex saepe tempora tempore sunt, Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem nam animi nihil recusandae quam, quis est quae minus ipsam placeat laboriosam? Nam modi laborum dicta, provident error a ex saepe tempora tempore sunt, </p>
+                        </div>
+                        <div class="arrow-icon">
+                            <span class="material-symbols-outlined">arrow_forward</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer id="footer">
+        <div class="footer-content">
+            <div class="description">
+                <div class="logo"><img src="assets/img/logo.png" alt="Whatever logo"></div>
+                <div class="text-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem rerum consectetur atque unde voluptatum. Voluptas, adipisci! Cumque obcaecati praesentium sapiente repellendus? Maxime ratione illum ex! Aut autem harum dolorem expedita.</div>
+            </div>
+            <div class="socials">
+                <div><i class="fa-brands fa-facebook-f"></i></div>
+                <div><i class="fa-brands fa-instagram"></i></div>
+                <div><i class="fa-brands fa-twitter"></i></div>
+                <div><i class="fa-brands fa-github"></i></div>
+                <div><i class="fa-brands fa-linkedin-in"></i></div>
+            </div>
+            <div class="sections">
+                <a href="index.html"><div>HOME</div></a>
+                <a href="projects.html"><div>PROJECTS</div></a>
+                <a href="contact.html"><div>CONTACTS</div>
+            </div>
+            <div class="copyrights">© 2023 Marianne Corbel</div>
+        </div>
+    </footer>
+    <script src="assets/js/project-carousel.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

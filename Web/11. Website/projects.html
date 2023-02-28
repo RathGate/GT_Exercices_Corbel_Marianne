@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="assets/css/styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <script src="https://kit.fontawesome.com/65cde144bd.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Poppins:wght@100;400&family=Questrial&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <title>Dropdown Menu</title>
+    </head>
+<body>
+    <header>
+        <nav>
+            <div class="icon-menu">
+                <span class="material-symbols-outlined">menu</span>
+            </div>
+            
+            <div class="nav-left">
+                <a class="nav-link" href="index.html"><div>HOME</div></a>
+                <div class="dropdown-container">
+                    <a class="nav-link"><div>PROJECTS</div></a>
+                    <div class="empty" style="height: 3px; width: 100%; position: absolute; top: 100%;"></div>
+                    <div class="dropdown-menu first-level">
+                        <div class="dropdown-option ">
+                            <a class="a-ignore" href="/#projects"><div class="option-name">OVERVIEW</div></a>
+                            <!-- <div class="dropdown-menu second-level">
+                                <div class="dropdown-option"><div class="option-name">ABCD 1.1</div></div>
+                                <div class="dropdown-option"><div class="option-name">ABCD 1.2</div></div>
+                            </div> -->
+                        </div>
+
+                        <div class="dropdown-option"><div class="option-name">TIMELINE</div>
+                            <div class="dropdown-menu second-level">
+                                <a href="projects.html"><div class="dropdown-option"><div class="option-name">2022</div></div></a>
+                                <a href="projects.html#tl-2023"><div class="dropdown-option"><div class="option-name">2023</div></div></a>
+                            </div>
+                        </div>
+                        <!-- <div class="dropdown-option"><div class="option-name">ALL PROJECTS</div>
+                            <div class="dropdown-menu second-level">
+                                <div class="dropdown-option"><div class="option-name">SOFTWARE DEVELOPMENT</div></div>
+                                <div class="dropdown-option"><div class="option-name">WEB DEVELOPMENT</div></div>
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+                <a class="nav-link" href="contact.html"><div>CONTACT</div></a>
+            </div>
+            <a href="index.html" style="display: flex; align-items: center;"><div class="nav-center"><img src="assets/img/logo.png" alt="RathGate Logo"></div></a>
+        </nav>
+    </header>
+    <main>
+        <aside class="hz-nav">
+            <div class="hz-menu-icon">MENU</i></div>
+            <div class="shortcut-container">
+                <div id="hz-btn-top"><i class="fa-solid fa-angle-up"></i></div>
+                <div id="hz-btn-2022">2022</div>
+                <span>|</span>
+                <div id="hz-btn-2023">2023
+                </div>
+                <div id="hz-btn-bottom"><i class="fa-solid fa-angle-down"></i></div>
+            </div>
+        </aside>
+        <section class="timeline-section">
+            <div id="tl-start" class="timeline-container">
+                <div class="tl-deco before"><span>.</span><span>.</span><span>.</span></div>
+                <div class="timeline-bg"></div>
+                <div id="tl-2022" class="timeline-item">
+                    <div class="timeline-date">February, 2022</div>
+                    <div class="timeline-card-container"><div class="item-circle"></div>
+                        <div class="timeline-card">
+                            <div class="tl-card-header">Rathlist!</div>
+                            <div class="tl-sep"></div>
+                            <div class="tl-card-main">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure eligendi consequatur, voluptatum dolorem veniam error officiis fugit aperiam dolorum in ducimus mollitia qui deleniti quod adipisci delectus labore? Omnis nostrum rerum corrupti atque! Quisquam, quam quis harum eum itaque vero totam ut fuga possimus eveniet dolores, doloribus omnis iste libero!</div>
+                            <div class="tl-card-footer"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">August, 2022</div>
+                    <div class="timeline-card-container"><div class="item-circle"></div>
+                        <div class="timeline-card">
+                            <div class="tl-card-header">Pokémon Text Formatter</div>
+                            <div class="tl-sep"></div>
+
+                            <div class="tl-card-main">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure eligendi consequatur, voluptatum dolorem veniam error officiis fugit aperiam dolorum in ducimus mollitia qui deleniti quod adipisci delectus labore? Omnis nostrum rerum corrupti atque! Quisquam, quam quis harum eum itaque vero totam ut fuga possimus eveniet dolores, doloribus omnis iste libero!</div>
+                            <div class="tl-card-footer"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">September, 2022</div>
+                    <div class="timeline-card-container"><div class="item-circle"></div>
+                        <div class="timeline-card">
+                            <div class="tl-card-header">Project Red</div>
+                            <div class="tl-sep"></div>
+
+                            <div class="tl-card-main">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure eligendi consequatur, voluptatum dolorem veniam error officiis fugit aperiam dolorum in ducimus mollitia qui deleniti quod adipisci delectus labore? Omnis nostrum rerum corrupti atque! Quisquam, quam quis harum eum itaque vero totam ut fuga possimus eveniet dolores, doloribus omnis iste libero!</div>
+                            <div class="tl-card-footer"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">October, 2022</div>
+                    <div class="timeline-card-container"><div class="item-circle"></div>
+                        <div class="timeline-card">
+                            <div class="tl-card-header">Hangman Go</div>
+                            <div class="tl-sep"></div>
+
+                            <div class="tl-card-main">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure eligendi consequatur, voluptatum dolorem veniam error officiis fugit aperiam dolorum in ducimus mollitia qui deleniti quod adipisci delectus labore? Omnis nostrum rerum corrupti atque! Quisquam, quam quis harum eum itaque vero totam ut fuga possimus eveniet dolores, doloribus omnis iste libero!</div>
+                            <div class="tl-card-footer"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">November, 2022</div>
+                    <div class="timeline-card-container"><div class="item-circle"></div>
+                        <div class="timeline-card">
+                            <div class="tl-card-header">Professor Layton, JS edition</div>
+                            <div class="tl-sep"></div>
+                            <div class="tl-card-main">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure eligendi consequatur, voluptatum dolorem veniam error officiis fugit aperiam dolorum in ducimus mollitia qui deleniti quod adipisci delectus labore? Omnis nostrum rerum corrupti atque! Quisquam, quam quis harum eum itaque vero totam ut fuga possimus eveniet dolores, doloribus omnis iste libero!</div>
+                            <div class="tl-card-footer"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">December, 2022</div>
+                    <div class="timeline-card-container"><div class="item-circle"></div>
+                        <div class="timeline-card">
+                            <div class="tl-card-header">Hangman Go + Web</div>
+                            <div class="tl-sep"></div>
+                            <div class="tl-card-main">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure eligendi consequatur, voluptatum dolorem veniam error officiis fugit aperiam dolorum in ducimus mollitia qui deleniti quod adipisci delectus labore? Omnis nostrum rerum corrupti atque! Quisquam, quam quis harum eum itaque vero totam ut fuga possimus eveniet dolores, doloribus omnis iste libero!</div>
+                            <div class="tl-card-footer"></div>
+                        </div>
+                    </div>
+                </div>
+                <div id="tl-2023" class="timeline-item">
+                    <div class="timeline-date">January, 2023</div>
+                    <div class="timeline-card-container"><div class="item-circle"></div>
+                        <div class="timeline-card">
+                            <div class="tl-card-header">F1 Data</div>
+                            <div class="tl-sep"></div>
+
+                            <div class="tl-card-main">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure eligendi consequatur, voluptatum dolorem veniam error officiis fugit aperiam dolorum in ducimus mollitia qui deleniti quod adipisci delectus labore? Omnis nostrum rerum corrupti atque! Quisquam, quam quis harum eum itaque vero totam ut fuga possimus eveniet dolores, doloribus omnis iste libero!</div>
+                            <div class="tl-card-footer"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">January, 2023 - Today</div>
+                    <div class="timeline-card-container"><div class="item-circle"></div>
+                        <div class="timeline-card">
+                            <div class="tl-card-header">Ethernium Chronicles</div>
+                            <div class="tl-sep"></div>
+
+                            <div class="tl-card-main">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure eligendi consequatur, voluptatum dolorem veniam error officiis fugit aperiam dolorum in ducimus mollitia qui deleniti quod adipisci delectus labore? Omnis nostrum rerum corrupti atque! Quisquam, quam quis harum eum itaque vero totam ut fuga possimus eveniet dolores, doloribus omnis iste libero!</div>
+                            <div class="tl-card-footer"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">February, 2023 - Today</div>
+                    <div class="timeline-card-container"><div class="item-circle"></div>
+                        <div class="timeline-card">
+                            <div class="tl-card-header">Livesplit data viewer</div>
+                            <div class="tl-sep"></div>
+
+                            <div class="tl-card-main">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure eligendi consequatur, voluptatum dolorem veniam error officiis fugit aperiam dolorum in ducimus mollitia qui deleniti quod adipisci delectus labore? Omnis nostrum rerum corrupti atque! Quisquam, quam quis harum eum itaque vero totam ut fuga possimus eveniet dolores, doloribus omnis iste libero!</div>
+                            <div class="tl-card-footer"></div>
+                        </div>
+                    </div>
+                </div>
+                <div id="tl-end" class="timeline-item">
+                    <div class="timeline-date">February, 2023 - Today</div>
+                    <div class="timeline-card-container"><div class="item-circle"></div>
+                        <div class="timeline-card">
+                            <div class="tl-card-header">2023 Portfolio</div>
+                            <div class="tl-sep"></div>
+
+                            <div class="tl-card-main">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure eligendi consequatur, voluptatum dolorem veniam error officiis fugit aperiam dolorum in ducimus mollitia qui deleniti quod adipisci delectus labore? Omnis nostrum rerum corrupti atque! Quisquam, quam quis harum eum itaque vero totam ut fuga possimus eveniet dolores, doloribus omnis iste libero!</div>
+                            <div class="tl-card-footer"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tl-deco after"><span>.</span><span>.</span><span>.</span></div>
+            </div>
+        </section>
+    </main>
+    <footer id="footer">
+        <div class="footer-content">
+            <div class="description">
+                <div class="logo"><img src="assets/img/logo.png" alt="Whatever logo"></div>
+                <div class="text-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem rerum consectetur atque unde voluptatum. Voluptas, adipisci! Cumque obcaecati praesentium sapiente repellendus? Maxime ratione illum ex! Aut autem harum dolorem expedita.</div>
+            </div>
+            <div class="socials">
+                <div><i class="fa-brands fa-facebook-f"></i></div>
+                <div><i class="fa-brands fa-instagram"></i></div>
+                <div><i class="fa-brands fa-twitter"></i></div>
+                <div><i class="fa-brands fa-github"></i></div>
+                <div><i class="fa-brands fa-linkedin-in"></i></div>
+            </div>
+            <div class="sections">
+                <a href="index.html"><div>HOME</div></a>
+                <a href="projects.html"><div>PROJECTS</div></a>
+                <a href="contact.html"><div>CONTACTS</div>
+            </div>
+            <div class="copyrights">© 2023 Marianne Corbel</div>
+        </div>
+    </footer>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

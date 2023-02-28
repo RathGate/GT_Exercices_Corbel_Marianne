@@ -1,0 +1,112 @@
+@import url(base.css);
+@import url(footer.css);
+@import url(hero-section.css);
+@import url(about-section.css);
+@import url(nav.css);
+@import url(skills-section.css);
+@import url(contact-section.css);
+@import url(timeline.css);
+@import url(hz-nav.css);
+
+:root {
+    --color-yellow: #ffd600;
+    --color-orange: #ff7a00;
+    --color-red: #ff0069;
+    --color-purple: #d300c5;
+    --color-blue: #7638fa;
+    --color-beige: #e4e4e4;
+    --background-color: #131313;
+    --screen-height: calc(100vh - 60px);
+    --color-gradient: linear-gradient(45deg,
+    var(--color-yellow),
+    var(--color-orange),
+    var(--color-red),
+    var(--color-purple) 60%,
+    var(--color-blue) 85%);
+}
+* {
+    scroll-behavior: smooth;
+}
+a:not(.a-ignore) {
+    text-decoration: none;
+    color: white;
+}
+
+main {
+    padding-top: 75px;
+    min-height: 100%;
+    width: 100%;
+}
+section {
+    min-height: calc(100vh - 75px);
+    width: 100%;
+    max-width: 1200px;
+}
+section:not(.hero-section) {
+    margin: 0 auto;
+}
+h1.section-title {
+    margin: 20px auto 40px;
+    font-family: 'Questrial', sans-serif;
+    font-size: 40px;
+    letter-spacing: 5px;
+    position: relative;
+    height: fit-content;
+    width: fit-content;
+    font-weight: normal;
+}
+h1.section-title {
+    position: relative;
+    left: -25px;
+}
+.section-title .fa-code {
+    position: absolute;
+    top: 0;
+    right: -1.75em;
+    animation: colors 4s alternate linear infinite;
+}
+
+.about-section, .skills-section {
+    padding: 40px 10px;
+}
+* {
+    scrollbar-width: auto;
+    scrollbar-color: var(--color-light-gray) rgba(255, 255, 255, .15);
+}
+
+*::-webkit-scrollbar {
+    width: 8px;
+}
+
+*::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, .15);
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: rgba(214, 214, 214, 0.8);
+    border-radius: 10px;
+}
+*::-webkit-scrollbar-thumb:hover {
+    background: var(--color-beige);
+}
+
+
+@media screen and (max-width: 950px) {
+    h1.section-title {
+        font-size: 35px;
+    }
+}
+@media screen and (max-width: 750px) {
+    section#projects {
+        min-height: auto;
+        padding-bottom: 120px;
+    }
+    #projects h1.section-title {
+        margin-bottom: 20px;
+    }
+}
+@media screen and (max-width: 550px) {
+    h1.section-title {
+        font-size: 28px;
+    }
+}
