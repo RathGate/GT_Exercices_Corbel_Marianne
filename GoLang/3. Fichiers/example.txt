@@ -1,6 +1,3 @@
-NOTE: Doing this exercise took me way way too much time-
+This is an example file. 
 
-But I kinda enjoyed it!
-Hope you won't find anything too broken...
-
-♪
+Feel free to change its content!

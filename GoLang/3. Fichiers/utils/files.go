@@ -135,7 +135,7 @@ func DeleteFile(filename string) bool {
 		return false
 	}
 
-	fmt.Println("\nSuccessfully deleted file ! Back to main menu...\n\n0 // Back")
+	fmt.Println("\nSuccessfully deleted file ! Back to main menu...\n")
 	ConfirmMenu("Back")
 	return true
 }

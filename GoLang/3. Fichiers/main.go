@@ -44,8 +44,12 @@ func MainMenu() {
 	for {
 		// Intro lines:
 		utils.DrawTitleBox(48, "M A I N  M E N U", "File Editor")
-		fmt.Println("\nWhich file do you wanna edit ?\n\n0 // Quit")
-
+		fmt.Println("\nWhich file do you wanna edit ?")
+		// Print the example file name if it exists:
+		if _, err := os.Stat("example.txt"); err == nil {
+			fmt.Println("[You can use `example.txt` to test the program]")
+		}
+		fmt.Println("\n0 // Quit")
 		// User must enter the file they want to create or edit:
 		answerStr := utils.AskUserString()
 
